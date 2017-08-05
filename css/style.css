@@ -55,7 +55,7 @@ h2{
 
 .header .contact_info{
  margin: 15px 0px 15px 0px;
- line-height: 17px;
+ line-height: 15px;
 }
 
 .header .contact_info>div{
@@ -63,7 +63,8 @@ h2{
     color: white;
     padding: 15px 0px;
     font-family: Arial,sans-serif;
-    font-size:16px;
+    font-size:15px;
+    line-height: 19px;
 }
 
 .header .contact_info>div:nth-child(2){
@@ -333,7 +334,7 @@ h2{
 
 .wrapper_info {
     width: 100%;
-    height: 960px;
+    height: 910px;
     background-repeat: no-repeat;
     background-image: url('../images/info_bg.jpg');
     background-size: cover;
@@ -1461,7 +1462,7 @@ margin-bottom: 4px;
     padding-left: 40px;
     padding-right: 35px;
     padding-top: 40px;
-    padding-bottom: 62px;
+    padding-bottom: 33px;
 }
 
 
