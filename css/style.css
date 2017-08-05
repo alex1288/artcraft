@@ -4,6 +4,7 @@
 	src: local('O'), url('../fonts/IdealistSans.woff') format('woff'), url('../fonts/IdealistSans.ttf') format('truetype'), url('../fonts/IdealistSans.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
+
 }
 
 @font-face {
@@ -22,6 +23,12 @@ body {
 body p {
     margin-bottom: 0px;
 }
+/*<alexd>*/
+h2{
+        position: relative;
+}
+/*<alexd>*/
+
 
 .wrapper {
     width: 100%;
@@ -56,7 +63,7 @@ body p {
     color: white;
     padding: 15px 0px;
     font-family: Arial,sans-serif;
-    font-size:12px;
+    font-size:16px;
 }
 
 .header .contact_info>div:nth-child(2){
@@ -140,7 +147,7 @@ body p {
     background: -o-linear-gradient(top,  #ffffff 0%,#cbcbcb 100%);
     background: -ms-linear-gradient(top,  #ffffff 0%,#cbcbcb 100%);
     background: linear-gradient(to bottom,  #ffffff 0%,#cbcbcb 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cbcbcb',GradientType=0 );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#cbcbcb',GradientType=0);
     border: 1px solid #aeaeae;
     -webkit-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.15);
     -moz-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.15);
@@ -167,8 +174,13 @@ body p {
 .header .call {
     float: right;
     text-align: right;
+    position: absolute;
+    right: 0px;
+    top: 43px;
 }
 
+
+ 
 .header .call h3 {
     color: #fff;
     font-size: 11px;
@@ -406,6 +418,18 @@ body p {
 }
 
 .why h2 {
+    font-size: 25px;
+    line-height: 1.4;
+    letter-spacing: 2px;
+    color: #f4373f;
+    text-align: center;
+    margin-bottom: 60px;
+    font-family: 'Intro-Regular',Arial,sans-serif;
+    text-transform: uppercase;
+}
+
+
+.why span {
     font-size: 25px;
     line-height: 1.4;
     letter-spacing: 2px;
@@ -1465,7 +1489,7 @@ margin-bottom: 4px;
 
 .map_info p {
     color: #ffffff;
-    font-size: 13px;
+    font-size: 17px;
     font-family: 'IdealistSans',Arial,sans-serif;
     margin-bottom: 20px;
     line-height: 20px;
@@ -1643,7 +1667,7 @@ text-transform: uppercase;
 font-family: 'IdealistSans',Arial,sans-serif;
 letter-spacing: 1px;
 /*border-bottom: 1px dashed #ffffff; */
-margin-top: 20px;
+margin-top: 29px;
 text-align: center;
 line-height: 1.2;
 }
@@ -1666,17 +1690,23 @@ line-height: 1.2;
     display: inline-block;
     vertical-align: top;
     color: #97979e;
-    font-size: 10px;
+    font-size: 16px;
     margin-left: 8px;
     margin-right: 8px;
     margin-top: 35px;
     font-family: 'Intro-Regular',Arial,sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
 }
 
 .nav li a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: #fff;
+
 }
 
 .nav_link {
@@ -2143,3 +2173,59 @@ margin-top:20px;
 }
 
 
+
+
+/*<alexd>*/
+h2:before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  left: 0; bottom: 3px; right: 0;
+ 
+  -webkit-transition: all 0.35s ease-in-out 0s;
+  -webkit-transform: scaleX(0);
+ 
+  transition: all 0.35s ease-in-out 0s;
+  transform: scaleX(0);
+  visibility: hidden;
+}
+
+.wrapper_info:hover  h2:before  {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  visibility: visible;
+}
+
+.wrapper_history:hover  h2:before  {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  visibility: visible;
+}
+
+.wrapper_awards:hover  h2:before  {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  visibility: visible;
+}
+
+.wrapper_atmosphere:hover  h2:before  {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  visibility: visible;
+}
+
+.wrapper_connect:hover  h2:before  {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  visibility: visible;
+}
+
+.wrapper_childrens:hover  h2:before  {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  visibility: visible;
+}
+
+/*<alexd>*/
