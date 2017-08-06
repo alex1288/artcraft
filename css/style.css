@@ -69,6 +69,15 @@ h2{
     line-height: 19px;
 }
 
+.header .contact_info>div p{
+    position: absolute;
+    font-size:15px;
+    line-height: 19px;
+    text-transform: none;
+    top: 38px;
+    left: 395px
+}
+
 .header .contact_info>div:nth-child(2){
       margin-left: 4px;
 }
@@ -654,12 +663,13 @@ filter:alpha(opacity=50);
 }
 
 .footer .logo {
-    width: 92px;
-    height: 49px;
+    width: 82px;
+    height: 71px;
     margin: 0 auto;
     background-repeat: no-repeat;
-    background-image: url('../images/footer_logo.png');
+    background-image: url('../images/menu_logo.png');
     margin-bottom: 35px;
+    background-size: cover;
 }
 
 .footer p {
@@ -1470,10 +1480,10 @@ margin-bottom: 4px;
 
 .map_info p {
     color: #ffffff;
-    font-size: 17px;
+    font-size: 16px;
     font-family: 'IdealistSans',Arial,sans-serif;
     margin-bottom: 20px;
-    line-height: 20px;
+    line-height: 30px;
 }
 
 .map_info span.phone5{
@@ -1491,7 +1501,7 @@ margin-bottom: 4px;
     letter-spacing: 1px;
     text-transform: uppercase;
     margin-bottom: 20px;
-
+    text-align: center;
 }
 
 .map_info h3 {
@@ -1629,11 +1639,12 @@ margin-bottom: 4px;
 
 .menu .logo {
     float: left;
-    width: 92px;
-    height: 49px;
-    margin-top: 15px;
-    background-image: url('../images/menu_logo.png');
+    width: 82px;
+    height: 71px;
+    margin-top: 5px;
+    background-image: url(../images/menu_logo.png);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #logo-top{
