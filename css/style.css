@@ -56,6 +56,8 @@ h2{
 .header .contact_info{
  margin: 15px 0px 15px 0px;
  line-height: 16px;
+ text-transform: uppercase;
+ font-weight: 700;
 }
 
 .header .contact_info>div{
